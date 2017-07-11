@@ -22,12 +22,11 @@ def GetEntityResult(str):
 
 def SearchEntity(ResultJSON, entity):
     Result = []
-    print ResultJSON[u'entities'][030][u'type']
     length = len(ResultJSON[u'entities'])
     for i in range(length):
-        str = ResultJSON[u'entities'][i][u'type']
-        if entity == str:
-            print str
+        entry = ResultJSON[u'entities'][i]
+        if entity == entry[u'type']:
+            print entry[u'name']
     #print ResultJSON[u'entities']
 
 SearchEntity(GetEntityResult(ReadTextFiles("samples/output.txt")),"PERSON")
