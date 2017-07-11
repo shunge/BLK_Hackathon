@@ -117,5 +117,5 @@ def main(argv):
 
 if __name__ == '__main__':
     # modified main() param, for testing purpose
-    sys.exit(main(['pdf2text.py', 'samples/resume_samples.pdf']))
+    sys.exit(main(['pdf2text.py', 'samples/exfi20.pdf']))
     # sys.exit(main(sys.argv))
