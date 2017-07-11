@@ -13,7 +13,7 @@ from pdfminer.image import ImageWriter
 # main
 def main(argv):
     # redirect stdout to a sample file
-    sys.stdout = open('samples/output.txt', 'w')
+    sys.stdout = open(argv[2], 'w')
 
     import getopt
     def usage():
@@ -115,7 +115,10 @@ def main(argv):
     outfp.close()
     return
 
-if __name__ == '__main__':
-    # modified main() param, for testing purpose
-    sys.exit(main(['pdf2text.py', 'samples/exfi20.pdf']))
-    # sys.exit(main(sys.argv))
+def ParseFiles(input_path, output_path):
+    sys.exit(main(['pdf2text.py', input_path, output_path]))
+
+# if __name__ == '__main__':
+#     # modified main() param, for testing purpose
+#     sys.exit(main(['pdf2text.py', 'samples/exfi20.pdf']))
+#     sys.exit(main(sys.argv))
