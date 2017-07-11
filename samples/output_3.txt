@@ -1,0 +1,105 @@
+Al Gorithm  
+
+azg@cmu.edu | (918) 555-6197 
+
+To obtain a professional position in the consulting industry utilizing my relevant experience, technical expertise, 
+and problem solving skills. 
+
+Carnegie Mellon University,    Pittsburgh, PA 
+Bachelor of Science in Computer Science, May 2016 
+ 
+Selected Coursework: Data Structures (Java), Web Applications, Database Applications, Distributed Systems, 
+Computer Systems (C and Unix), Great Theoretical Ideas in Computer Science 
+
+ 
+ 
+GPA: 3.0 
+
+ 
+
+ 
+
+Coding:  C/C++, Java, x86 assembly, C#, PHP, Javascript, HTML, CSS, SML, Ruby, Perl 
+Technologies/Environment: Windows, Win32 API/GUI, Linux, MySQL, OpenGL, ASP.NET 
+ 
+
+Artemia Health Systems, Cleveland, Ohio 
+Student Intern (Summer 2015) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+•  Created new functionality for state-level prescription drug information system 
+•  Worked with end users to determine their information needs   
+•  Wrote application to create custom surveys 
+•  Migrated existing website from SQL Membership to to ASP.NET 
+  
+
+Carnegie Mellon University Computing Services Help Center,   Pittsburgh, PA 
+Student Consultant (September 2013 – Present) 
+
+ 
+
+•  Resolved issues regarding networking (wired, wireless, and dialup), and email problems for Carnegie 
+
+Mellon University users 
+
+•  Answered questions about software supported by the university, such as MS Office 
+•  Communicated with customers through email, telephone, and face to face 
+
+Vintage Foundation (Fall 2014) – a consulting project in a nonprofit organization  
+
+Instructed program director on building a user-friendly website and relational database 
+
+•  Advised on new technologies to help further the organizational mission 
+• 
+•  Assessed systemic problems and suggested possible solutions 
+ 
+
+News Delivery System (Spring 2014) - online information gathering/presentation system  
+
+Integrated old code with new for web application delivering custom tailored web news 
+
+• 
+•  Coded in Java using Model-View-Controller architecture 
+
+ 
+Ebarter (Fall 2013) - an online bartering system running on Apache Tomcat 
+
+•  Applied software engineering principles along with J2SE Web Development Kit 
+• 
+
+Led team in coding phase of development 
+
+ 
+OBJECTIVE 
+  
+
+ 
+EDUCATION 
+
+ 
+
+SKILLS 
+
+EXPERIENCE 
+
+ 
+PROJECTS 
+
+ 
+ 
+ 
+ 
+ 
+
+4 
+
+
