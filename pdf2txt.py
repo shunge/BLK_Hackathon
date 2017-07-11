@@ -11,26 +11,22 @@ from pdfminer.layout import LAParams
 from pdfminer.image import ImageWriter
 
 # main
-_metaclass__ = type
+class TypeConvert:
+    def __init__(self):
+        pass
 
-class ConvertToText:
-    def __init__(self, input_folder, output_folder):
-        self.input_folder = input_folder
-        self.output_folder = output_folder
-
-    def parse(self, input_file, output_file):
-        sys.stdout = open(self.output_folder + output_file, 'w')
+    def parse(self, argv):
+        sys.stdout = open(argv[1]+'.txt', 'w')
         import getopt
         def usage():
             print ('usage: %s [-d] [-p pagenos] [-m maxpages] [-P password] [-o output]'
                    ' [-C] [-n] [-A] [-V] [-M char_margin] [-L line_margin] [-W word_margin]'
                    ' [-F boxes_flow] [-Y layout_mode] [-O output_dir] [-R rotation]'
                    ' [-t text|html|xml|tag] [-c codec] [-s scale]'
-                   ' file ...')
+                   ' file ...' % argv[0])
             return 100
-
         try:
-            (opts, args) = getopt.getopt(self.input_folder + input_file, 'dp:m:P:o:CnAVM:L:W:F:Y:O:R:t:c:s:')
+            (opts, args) = getopt.getopt(argv[1:], 'dp:m:P:o:CnAVM:L:W:F:Y:O:R:t:c:s:')
         except getopt.GetoptError:
             return usage()
         if not args: return usage()
@@ -53,44 +49,25 @@ class ConvertToText:
         showpageno = True
         laparams = LAParams()
         for (k, v) in opts:
-            if k == '-d':
-                debug += 1
-            elif k == '-p':
-                pagenos.update(int(x) - 1 for x in v.split(','))
-            elif k == '-m':
-                maxpages = int(v)
-            elif k == '-P':
-                password = v
-            elif k == '-o':
-                outfile = v
-            elif k == '-C':
-                caching = False
-            elif k == '-n':
-                laparams = None
-            elif k == '-A':
-                laparams.all_texts = True
-            elif k == '-V':
-                laparams.detect_vertical = True
-            elif k == '-M':
-                laparams.char_margin = float(v)
-            elif k == '-L':
-                laparams.line_margin = float(v)
-            elif k == '-W':
-                laparams.word_margin = float(v)
-            elif k == '-F':
-                laparams.boxes_flow = float(v)
-            elif k == '-Y':
-                layoutmode = v
-            elif k == '-O':
-                imagewriter = ImageWriter(v)
-            elif k == '-R':
-                rotation = int(v)
-            elif k == '-t':
-                outtype = v
-            elif k == '-c':
-                codec = v
-            elif k == '-s':
-                scale = float(v)
+            if k == '-d': debug += 1
+            elif k == '-p': pagenos.update( int(x)-1 for x in v.split(',') )
+            elif k == '-m': maxpages = int(v)
+            elif k == '-P': password = v
+            elif k == '-o': outfile = v
+            elif k == '-C': caching = False
+            elif k == '-n': laparams = None
+            elif k == '-A': laparams.all_texts = True
+            elif k == '-V': laparams.detect_vertical = True
+            elif k == '-M': laparams.char_margin = float(v)
+            elif k == '-L': laparams.line_margin = float(v)
+            elif k == '-W': laparams.word_margin = float(v)
+            elif k == '-F': laparams.boxes_flow = float(v)
+            elif k == '-Y': layoutmode = v
+            elif k == '-O': imagewriter = ImageWriter(v)
+            elif k == '-R': rotation = int(v)
+            elif k == '-t': outtype = v
+            elif k == '-c': codec = v
+            elif k == '-s': scale = float(v)
         #
         PDFDocument.debug = debug
         PDFParser.debug = debug
@@ -133,10 +110,12 @@ class ConvertToText:
             for page in PDFPage.get_pages(fp, pagenos,
                                           maxpages=maxpages, password=password,
                                           caching=caching, check_extractable=True):
-                page.rotate = (page.rotate + rotation) % 360
+                page.rotate = (page.rotate+rotation) % 360
                 interpreter.process_page(page)
             fp.close()
         device.close()
         outfp.close()
         return
 
+# if __name__ == '__main__':
+#     sys.exit(main(sys.argv))

@@ -1,14 +1,13 @@
 import pdf2txt
-from RequestInterface import *
-
+import sys
 
 def main():
-    worker = pdf2txt.ConvertToText("samples/", "samples/")
-    worker.parse("sample-resumes_scs_1.pdf", "sample-resumes_scs_1.txt")
+    worker = pdf2txt.TypeConvert()
+    worker.parse(["pdf2txt.py","samples/sample-resumes_scs_2.pdf"])
 
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
 
 
