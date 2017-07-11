@@ -1,5 +1,6 @@
 # importing the requests library
 import requests
+import json
 
 def ReadTextFiles(fileName):
     with open(fileName, "r") as myfile:
@@ -16,9 +17,17 @@ def GetEntityResult(str):
       }
     }
     r = requests.post(url = ENDPOINT, json=data)
-    print(r.text)
+    data = json.loads(r.text)
+    return data
 
-GetEntityResult(ReadTextFiles("samples/output.txt"))
+def SearchEntity(ResultJSON, entity):
+    Result = []
+    print ResultJSON[u'entities'][030][u'type']
+    length = len(ResultJSON[u'entities'])
+    for i in range(length):
+        str = ResultJSON[u'entities'][i][u'type']
+        if entity == str:
+            print str
+    #print ResultJSON[u'entities']
 
-if __name__ == '__main__':
-    print ()
+SearchEntity(GetEntityResult(ReadTextFiles("samples/output.txt")),"PERSON")
