@@ -16,7 +16,7 @@ class TypeConvert:
         pass
 
     def parse(self, argv):
-        sys.stdout = open(argv[1]+'.txt', 'w')
+
         import getopt
         def usage():
             print ('usage: %s [-d] [-p pagenos] [-m maxpages] [-P password] [-o output]'
@@ -112,9 +112,9 @@ class TypeConvert:
                                           caching=caching, check_extractable=True):
                 page.rotate = (page.rotate+rotation) % 360
                 interpreter.process_page(page)
-            fp.close()
-        device.close()
-        outfp.close()
+        #     fp.close()
+        # device.close()
+        # outfp.close()
         return
 
 # if __name__ == '__main__':
