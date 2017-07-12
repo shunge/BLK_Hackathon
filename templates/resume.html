@@ -134,7 +134,9 @@
 					<tbody>
                     {% for skill in responses %}
 						<tr>
-							<td>skill['name']</td>
+							<td>{{skill['name']}}</td>
+                            <td>{{skill['score']}}</td>
+                            <td><embed src="static/sample.pdf" width="600" height="425" type='application/pdf'></td>
 						</tr>
                     {% endfor %}
 					</tbody>
