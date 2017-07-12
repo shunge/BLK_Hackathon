@@ -1,4 +1,5 @@
 import re
+from RequestInterface import PersonalInfoExtracter
 import sqliteObject
 
 class TxtParser:
@@ -45,4 +46,8 @@ class TxtParser:
 
 		return obj
 
+
+		extracter = PersonalInfoExtracter()
+		obj.setMAJOR(extracter.Major_Extraction(fileName))
+		obj.setUniv(extracter.School_Extraction(fileName))
 
