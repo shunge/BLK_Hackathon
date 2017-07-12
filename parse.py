@@ -42,6 +42,6 @@ class TxtParser:
 
 
 		extracter = PersonalInfoExtracter()
-		extracter.Major_Extraction(fileName)
-		extracter.School_Extraction(fileName)
+		obj.setMAJOR(extracter.Major_Extraction(fileName))
+		obj.setUniv(extracter.School_Extraction(fileName))
 
