@@ -1,11 +1,12 @@
 class sqliteObj:
     IDCOUNTER = 1
+
     def __init__(self):
         self.ID = sqliteObj.IDCOUNTER
-        self.NAME = None
-        self.Univ = None
-        self.MAJOR = None
-        self.GPA = None
+        self.NAME = "NULL"
+        self.Univ = "NULL"
+        self.MAJOR = "NULL"
+        self.GPA = "NULL"
         sqliteObj.IDCOUNTER += 1
 
     def setName(self, name):
@@ -19,3 +20,18 @@ class sqliteObj:
 
     def setGPA(self, gpa):
         self.GPA = gpa
+
+    def getID(self):
+        return self.ID
+
+    def getNAME(self):
+        return self.NAME
+
+    def getUniv(self):
+        return self.Univ
+
+    def getMAJOR(self):
+        return self.MAJOR
+
+    def getGPA(self):
+        return self.GPA
