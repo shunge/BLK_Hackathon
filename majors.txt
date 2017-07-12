@@ -139,24 +139,27 @@ Photobiology
 Radiation Biology/Radiobiology
 Structural Biology
 Biology
-Biology/Biological Sciences
+Biological Sciences
 Biomedical Sciences
 Biomathematics, Bioinformatics, and Computational Biology
 Bioinformatics
-Biometry/Biometrics
+Biometry
+Biometrics
 Biostatistics
 Computational Biology
 Biotechnology
 Biotechnology
-Botany/Plant Biology
+Botany
+Plant Biology
 Botany/Plant Biology
 Plant Molecular Biology
-Plant Pathology/Phytopathology
+Plant Pathology
+Phytopathology
 Plant Physiology
-Cell/Cellular Biology and Anatomical Sciences
+Cellular Biology and Anatomical Sciences
 Anatomy
 Cell Biology and Anatomy
-Cell/Cellular and Molecular Biology
+Cellular and Molecular Biology
 Cell/Cellular Biology and Histology
 Developmental Biology and Embryology
 Ecology, Evolution, Systematics, and Population Biology
@@ -173,8 +176,10 @@ Systematic Biology/Biological Systematics
 Genetics
 Animal Genetics
 Genetics
-Genome Sciences/Genomics
-Human/Medical Genetics
+Genome Sciences
+Genomics
+Human Genetics
+Medical Genetics
 Microbial and Eukaryotic Genetics
 Molecular Genetics
 Plant Genetics
@@ -209,11 +214,14 @@ Endocrinology
 Exercise Physiology
 Molecular Physiology
 Oncology and Cancer Biology
-Pathology/Experimental Pathology
+Pathology
+Experimental Pathology
 Physiology
 Reproductive Biology
-Vision Science/Physiological Optics
-Zoology/Animal Biology
+Vision Science
+Physiological Optics
+Zoology
+Animal Biology
 Animal Behavior and Ethology
 Animal Physiology
 Entomology
@@ -229,7 +237,8 @@ Auditing
 Business Administration, Management and Operations
 Business Administration and Management
 Customer Service Management
-E-Commerce/Electronic Commerce
+E-Commerce
+Electronic Commerce
 Logistics, Materials, and Supply Chain Management
 Non-Profit/Public/Organizational Management
 Office Management and Supervision
@@ -422,7 +431,7 @@ Blasting/Blaster
 Pipefitting/Pipefitter and Sprinkler Fitter
 Plumbing Technology/Plumber
 Well Drilling/Driller
-Education
+*Edu
 Bilingual, Multilingual, and Multicultural Education
 Bilingual and Multilingual Education
 Indian/Native American Education
@@ -447,8 +456,8 @@ Educational Statistics and Research Methods
 Learning Sciences
 Educational/Instructional Media Design
 Educational/Instructional Technology
-Education
-Education
+*Education
+*Education
 International and Comparative Education
 International and Comparative Education
 Social and Philosophical Foundations of Education
@@ -594,7 +603,6 @@ Hazardous Materials Information Systems Technology/Technician
 Industrial Safety Technology/Technician
 Occupational Safety and Health Technology/Technician
 Quality Control Technology/Technician
-Engineering
 Aerospace, Aeronautical and Astronautical Engineering
 Aerospace, Aeronautical and Astronautical/Space Engineering
 Agricultural Engineering
@@ -638,8 +646,6 @@ Engineering Physics
 Engineering Physics/Applied Physics
 Engineering Science
 Engineering Science
-Engineering
-Engineering
 Pre-Engineering
 Environmental/Environmental Health Engineering
 Environmental/Environmental Health Engineering
