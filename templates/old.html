@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>Career Qualifications</h1>
+    <form action="." method="POST">
+        <h2>Required Qualifications</h2>
+        <input type="text" name="r_text">
+        <h2>Desired Qualifications</h2>
+        <input type="text" name="d_text">
+        <input type="submit" name="my-form" value="Send">
+    </form>
+    {% for skill in responses %}
+    <h2> {{ skill['name'] }}</h2>
+    {% endfor %}
+    <embed src="file:///Users/chriscahill/PycharmProjects/Hackathon/solrpy-0.9.7/hackathon/images/sample.pdf" width="500" height="375" type='application/pdf'>
+</body>
+</html>
