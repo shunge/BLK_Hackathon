@@ -4,6 +4,10 @@ import json
 import csv
 import re
 import string
+import os
+from nltk.tag import StanfordNERTagger
+
+java_path ="C:\Program Files\Java\jdk1.8.0_131\bin\java.exe"
 
 class NLPParser:
     GOOGLEENDPOINT = \
@@ -70,6 +74,7 @@ class PersonalInfoExtracter:
                     if re.search('(masters|bachelor|b.s.|bs|major|phd|ms)', Searchable_line) is not None:
                         print major_lower
                         return major_lower
+        return None
 
     def School_Extraction(self, path):
         for school in self.All_Schools:
@@ -80,6 +85,21 @@ class PersonalInfoExtracter:
                 if school_lower in Searchable_line:
                         print school_lower
                         return school_lower
+        return None
+
+    def Name_Extraction(self, path):
+        st = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz', "stanford-ner.jar")
+        result = ""
+        length = 0
+        searchfile = open(path, "r")
+        for line in searchfile:
+            for entry in st.tag(line.split()):
+                if entry[1] == "PERSON":
+                    print entry[0]
+                    result += entry[0] + " "
+                    length += 1
+                    if length == 2:
+                        return result
 
 if __name__ == '__main__':
     # parser = NLPParser()
@@ -88,5 +108,8 @@ if __name__ == '__main__':
     # parser.SearchEntity("PERSON")
 
     extracter = PersonalInfoExtracter()
-    extracter.Major_Extraction("samples/output_11.txt")
+    extracter.School_Extraction("samples/output_13.txt")
     # parser.nltkNER()
+
+    print extracter.Name_Extraction("samples/output_13.txt")
+    st = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz',"stanford-ner.jar")
