@@ -1,6 +1,9 @@
 import pdf2txt
 import parse
 import sys
+import sqliteObject
+
+
 
 def main(argv):
     orig_stdout = sys.stdout
@@ -17,5 +20,3 @@ if __name__ == '__main__':
     for i in range (1, 5):
         path = "samples/sample-resumes_finance_%d.pdf" % i
         main(["pdf2txt.py", path])
-
-

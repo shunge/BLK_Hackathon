@@ -1,5 +1,6 @@
 import re
 from RequestInterface import PersonalInfoExtracter
+import sqliteObject
 
 class TxtParser:
 	@staticmethod
@@ -8,8 +9,11 @@ class TxtParser:
 		f = open(fileName, 'r')
 		text = f.read()
 
+		obj = sqliteObject.sqliteObj()
+
 		match = re.search('([A-Z][a-z]+|\.)(?:\s+([A-Z][a-z]+|\.))*(?:\s+[a-z][a-z\-]+){0,2}\s+([A-Z][a-z]+|\.)', text)
 		if match is not None:
+			obj.setName(match.group())
 			print('Name: ' + match.group())
 
 		match = re.search(
@@ -36,6 +40,8 @@ class TxtParser:
 		if match is not None:
 			print('Degree: ' + match.groups()[1])
 
+
 		extracter = PersonalInfoExtracter()
 		extracter.Major_Extraction(fileName)
 		extracter.School_Extraction(fileName)
+
