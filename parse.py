@@ -38,3 +38,5 @@ class TxtParser:
 		match = re.search('Education(\n.*?)+((Bachelor|Masters|Doctorate).*)', text, re.I)
 		if match is not None:
 			print('Degree: ' + match.groups()[1])
+
+
