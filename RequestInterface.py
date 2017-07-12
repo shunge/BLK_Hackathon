@@ -52,13 +52,13 @@ class PersonalInfoExtracter:
     def __init__(self):
         self.All_Majors = []
         self.All_Schools = []
-        self.str = ""
         with open("majors.txt") as f_obj:
             for line in f_obj:
                 self.All_Majors.append(line.rstrip())
         with open("Uni.txt") as f_obj:
             for line in f_obj:
                 self.All_Schools.append(line.rstrip())
+
 
     def Major_Extraction(self, path):
         for major in self.All_Majors:
@@ -69,6 +69,7 @@ class PersonalInfoExtracter:
                 if major_lower in Searchable_line:
                     if re.search('(masters|bachelor|b.s.|bs|major|phd|ms)', Searchable_line) is not None:
                         print major_lower
+                        return major_lower
 
     def School_Extraction(self, path):
         for school in self.All_Schools:
@@ -78,13 +79,14 @@ class PersonalInfoExtracter:
                 Searchable_line = line.lower()
                 if school_lower in Searchable_line:
                         print school_lower
+                        return school_lower
 
 if __name__ == '__main__':
-    parser = NLPParser()
-    parser.ReadTextFiles("samples/output.txt")
-    parser.GetEntityResult()
-    parser.SearchEntity("PERSON")
+    # parser = NLPParser()
+    # parser.ReadTextFiles("samples/output.txt")
+    # parser.GetEntityResult()
+    # parser.SearchEntity("PERSON")
 
     extracter = PersonalInfoExtracter()
-    extracter.Major_Extraction("samples/output_13.txt")
+    extracter.Major_Extraction("samples/output_11.txt")
     # parser.nltkNER()

@@ -1,5 +1,5 @@
 import re
-
+from RequestInterface import PersonalInfoExtracter
 
 class TxtParser:
 	@staticmethod
@@ -35,3 +35,7 @@ class TxtParser:
 		match = re.search('Education(\n.*?)+((Bachelor|Masters|Doctorate).*)', text, re.I)
 		if match is not None:
 			print('Degree: ' + match.groups()[1])
+
+		extracter = PersonalInfoExtracter()
+		extracter.Major_Extraction(fileName)
+		extracter.School_Extraction(fileName)
