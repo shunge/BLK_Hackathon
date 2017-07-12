@@ -5,7 +5,6 @@ import csv
 import re
 import string
 
-<<<<<<< HEAD
 def ReadTextFiles(fileName):
     with open(fileName, "r") as myfile:
         data = myfile.read()
@@ -70,7 +69,7 @@ def School_Extraction(path):
 
 Major_Extraction("samples/output_13.txt")
 School_Extraction("samples/output_13.txt")
-=======
+
 class NLPParser:
     GOOGLEENDPOINT = "https://language.googleapis.com/v1/documents:analyzeEntities?key=AIzaSyAofEz7JEguPw8PGMwKeleaJt4XEVmjkmQ"
 
@@ -124,6 +123,3 @@ if __name__ == '__main__':
     # parser.nltkNER()
 
 
-
-# SearchEntity(GetEntityResult(ReadTextFiles("samples/output.txt")),"PERSON")
->>>>>>> 6d9b03af6778322d0e142976630bd4a284c776e4
