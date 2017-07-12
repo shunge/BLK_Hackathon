@@ -10,13 +10,15 @@ def main(argv):
     sys.stdout.close()
     sys.stdout = orig_stdout
 
-    fileName = argv[1]
+    fileName = argv[1] + '.txt'
     parse.TxtParser.parseFile(fileName)
 
 
 
 
 if __name__ == '__main__':
-    main(["pdf2txt.py","samples/sample-resumes_scs_2.pdf"])
+    for i in range (1, 5):
+        path = "samples/sample-resumes_finance_%d.pdf" % i
+        main(["pdf2txt.py", path])
 
 

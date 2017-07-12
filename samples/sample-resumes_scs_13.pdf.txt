@@ -1,0 +1,63 @@
+Monica Smith 
+
+413.555-1212 
+
+1 Chapin Way, 1234, Northampton, MA 01063 * msmith@smith.edu 
+
+ 
+EDUCATION 
+Smith College, Northampton, MA 
+Bachelor of Arts in Computer Science, expected graduation: May 2016 
+Relevant Coursework: 
+Introductory Python, Circuit Theory, Mechanics, Strength of Materials, Thermodynamics, Calculus I, 
+Calculus II, Programming with Data Structures, Computer Graphics, Linear Algebra, Advanced 
+Programming Technique, Algorithms, Discrete Mathematics, Microprocessors and Assembly 
+Language, Theoretical Foundations, Mobile and Locative Computing. 
+ 
+SKILLS 
+Technical: Python, Java, Django, Mathematica, HTML, and OpenGL 
+Languages: Conversational Spanish 
+ 
+EXPERIENCE 
+Smith College, Computer Science Department – Teaching Assistant (Sept – present) 
+
+(cid:120)  Teaching assistant for Introduction to Programming using python (CSC 111) 
+(cid:120)  Help students with question they may have regarding homework, lab, and programming concepts 
+
+ 
+Serious Technology, Weymouth, MA- Django Web Development Intern (June – present) 
+
+(cid:120)  Built a timesheet application to log hours of work, run reports on time spent on a specific project, and 
+
+added QuickBooks exporting feature. 
+
+(cid:120)  Working on fixing bugs for customers and adding features upon request 
+
+ 
+Smith Undergraduate Research Fellowship (SURF) Research Student (Summer 2014) 
+Project: Computational Infrastructure For Predicting Auxetic Behavior in Crystalline Materials (funded 
+by NSF) 
+
+(cid:120)  Currently working on developing a GUI using PHP and Jmol (Java Molecular visualizer) to integrate 
+
+into the Kinari software. 
+
+(cid:120)  GUI will help predict if the any of the observed crystalline structures exhibit Auxetic behavior 
+
+ 
+Summer Science and Engineering Program - Robotics Teaching Assistant 
+
+(cid:120)  Office of Non-degree Programs, Smith College (Jul-Aug 2013) 
+(cid:120)  Robotics course focused on the basic structure of programming through the use of LEGO 
+
+MINDSTORMS 
+
+(cid:120)  The course allowed students to understand the engineering design cycle 
+(cid:120)  Helped prepare course material  
+(cid:120)  Taught students how create their own web pages using HTML and JavaScript 
+
+ 
+
+Sample Science and Technical Resumes – Smith College Lazarus Center for Development 
+
+

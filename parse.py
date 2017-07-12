@@ -4,6 +4,7 @@ import re
 class TxtParser:
 	@staticmethod
 	def parseFile(fileName):
+
 		f = open(fileName, 'r')
 		text = f.read()
 
@@ -36,5 +37,3 @@ class TxtParser:
 			print('Degree: ' + match.groups()[1])
 
 
-# if __name__ == '__main__':
-# 	parse('samples/sample-resumes_scs_2.pdf.txt')
