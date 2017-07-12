@@ -1,0 +1,92 @@
+ 
+
+ 
+
+ 
+
+John Doe 
+OBJECTIVE 
+To obtain a summer internship in Computer Networking and Systems Administration 
+
+123 Any Road 
+Houghton, MI 49931 
+123.456.7890 
+jdoe@mtu.edu 
+
+ 
+
+EDUCATION 
+Michigan Technological University 
+BS Computer Networking and Systems Administration 
+GPA: 3.75  Department GPA: 3.94 
+INTERNSHIP EXPERIENCE 
+Gentex Corporation 
+Associate Computer Network Administrator 
+  Performed upgrades using Exchange Management Console and PowerShell to upgrade user 
+
+Zeeland, MI 
+May – August 2014 
+
+Houghton, MI 
+Expected 2016 
+
+Houghton, MI 
+Sept 2013 – Present 
+
+Installing Microsoft and Mac software 
+Installing Hardware 
+Installing/Updating device drivers 
+
+ 
+ 
+ 
+  Staff collaboration 
+
+accounts, resources and equipment from Exchange 2003 to 2010 
+
+  Configuring using Exchange PowerShell and MMC to configure a conference room 
+  Uninstalled and decommissioned legacy mail servers 
+  Established network connectivity to Libert UPSs to alert employees to UPS alarms 
+  Established centralized management using Solarwinds Orion 
+  Migration to Layer 3 cisco switch stacks using the cisco IOS command line 
+  Planned conversion from a class B IP scheme to a class A IP scheme using Ipplan 
+  Programed cisco switches using cisco IOS for new production line 
+Michigan Tech University 
+Associate Computer Systems Administrator 
+(Working 10+ hrs/wk while maintaining full academic schedule) 
+ 
+  Placing machines in correct OU using Active Directory 
+  Replacing hardware in desktops and laptops to repair and maintain machines 
+  Backing up computers using duplicate hard drives and ghost to maintain redundancy 
+COMPUTER/TECHNICAL SKILLS 
+  Cisco IOS 
+  C++ programming 
+  Shell Script Programming 
+  Compiled Linux Kernel 
+
+  Linux Administration 
+  Printer maintenance 
+  Ethernet cable 
+
+Installing operating systems on computers using pre-imaged hard drive for lab machines 
+
+construction/replacement 
+  Duplicating sensitive data 
+
+CERTIFICATIONS 
+  A+ from CompTI (The IT Industry Association) 
+
+CO-CURRICULAR PARTICIPATION 
+  AITP, Association of Information Technology Professionals, Michigan Tech 
+  Sledheads – The Snowmobile Club of MTU 
+HONORS/AWARDS 
+  Epsilon Pi Tau Honor Society, Michigan Tech University 
+  Wellgates Scholar Program, Wellgates International Distinguished Scholars 
+
+WORK HISTORY 
+  Traffic Engineering Department Technician, City of Battle Creek, MI, May – Aug 2011 
+ 
+
+ITT Technician, Pennfield High School, Battle Creek, MI, Aug 2009 – Dec 2009 
+
+

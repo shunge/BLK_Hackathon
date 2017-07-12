@@ -63,7 +63,6 @@ class PersonalInfoExtracter:
             for line in f_obj:
                 self.All_Schools.append(line.rstrip())
 
-
     def Major_Extraction(self, path):
         for major in self.All_Majors:
             major_lower = major.lower()
@@ -74,7 +73,7 @@ class PersonalInfoExtracter:
                     if re.search('(masters|bachelor|b.s.|bs|major|phd|ms)', Searchable_line) is not None:
                         print major_lower
                         return major_lower
-        return None
+        return "Null"
 
     def School_Extraction(self, path):
         for school in self.All_Schools:
@@ -85,21 +84,25 @@ class PersonalInfoExtracter:
                 if school_lower in Searchable_line:
                         print school_lower
                         return school_lower
-        return None
+        return "Null"
 
     def Name_Extraction(self, path):
         st = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz', "stanford-ner.jar")
         result = ""
         length = 0
+        max_length = 2
         searchfile = open(path, "r")
         for line in searchfile:
             for entry in st.tag(line.split()):
                 if entry[1] == "PERSON":
-                    print entry[0]
                     result += entry[0] + " "
                     length += 1
-                    if length == 2:
+                    if "." in entry[0] or len(entry[0]) == 1:
+                        max_length = 3
+                    if length == max_length:
+                        print result
                         return result
+        return "Null"
 
 if __name__ == '__main__':
     # parser = NLPParser()
@@ -111,5 +114,5 @@ if __name__ == '__main__':
     extracter.School_Extraction("samples/output_13.txt")
     # parser.nltkNER()
 
-    print extracter.Name_Extraction("samples/output_13.txt")
+    print extracter.Name_Extraction("samples/output_8.txt")
     st = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz',"stanford-ner.jar")
