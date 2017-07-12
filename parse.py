@@ -1,4 +1,5 @@
 import re
+from RequestInterface import PersonalInfoExtracter
 import sqliteObject
 
 class TxtParser:
@@ -39,4 +40,8 @@ class TxtParser:
 		if match is not None:
 			print('Degree: ' + match.groups()[1])
 
+
+		extracter = PersonalInfoExtracter()
+		extracter.Major_Extraction(fileName)
+		extracter.School_Extraction(fileName)
 

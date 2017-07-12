@@ -16,11 +16,7 @@ def main(argv):
     fileName = argv[1] + '.txt'
     parse.TxtParser.parseFile(fileName)
 
-
-
 if __name__ == '__main__':
     for i in range (1, 5):
         path = "samples/sample-resumes_finance_%d.pdf" % i
         main(["pdf2txt.py", path])
-
-
