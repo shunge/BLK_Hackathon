@@ -39,7 +39,7 @@ class sqliteTable:
 				cur = con.cursor()
 				for record in records:
 					param = "INSERT INTO Users VALUES(%s, %s, %s, %s, %s)" % \
-							(record.getID(), "'"+record.getNAME()+"'", "'"+record.getUniv()+"'", "'"+record.getMAJOR()+"'", "'"+record.getGPA()+"'")
+							(record.getID(), '"'+record.getNAME()+'"', '"'+record.getUniv()+'"', '"'+record.getMAJOR()+'"', '"'+record.getGPA()+'"')
 					print param
 					cur.execute(param)
 		except lite.Error, e:

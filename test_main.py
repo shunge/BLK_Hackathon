@@ -18,21 +18,19 @@ def helper(argv):
 
 if __name__ == '__main__':
 
-    # list = []
-    # for i in range (1, 14):
-    #     path = "samples/sample-resumes_scs_%d.pdf" % i
-    #     list.append(helper(["pdf2txt.py", path]))
-    #
-    # for i in range(1, 3):
-    #     path = "samples/sample-resumes_finance_%d.pdf" % i
-    #     list.append(helper(["pdf2txt.py", path]))
+    list = []
+    for i in range (1, 14):
+        path = "samples/sample-resumes_scs_%d.pdf" % i
+        list.append(helper(["pdf2txt.py", path]))
+
+    for i in range(1, 3):
+        path = "samples/sample-resumes_finance_%d.pdf" % i
+        list.append(helper(["pdf2txt.py", path]))
 
     sql = sqliteOperation.sqliteTable()
     # sql.createTable()
-    # sql.insertValue(list)
+    sql.insertValue(list)
     sql.lookUp()
 
-#     for i in range (1, 5):
-#         path = "samples/sample-resumes_finance_%d.pdf" % i
-#         main(["pdf2txt.py", path])
+
 

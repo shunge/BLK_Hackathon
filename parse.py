@@ -35,19 +35,15 @@ class TxtParser:
 
 		match = re.search('Education\s+(.*\n)', text, re.I)
 		if match is not None:
-			obj.setUniv(match.groups()[0].rstrip())
 			print('Education: ' + match.groups()[0].rstrip())
 
 		match = re.search('Education(\n.*?)+((Bachelor|Masters|Doctorate).*)', text, re.I)
 		if match is not None:
-			obj.setMAJOR(match.groups()[1])
 			print('Degree: ' + match.groups()[1])
-			print obj.getMAJOR()
-
-		return obj
 
 
 		extracter = PersonalInfoExtracter()
 		obj.setMAJOR(extracter.Major_Extraction(fileName))
 		obj.setUniv(extracter.School_Extraction(fileName))
+		return obj
 
