@@ -19,13 +19,6 @@ def helper(argv):
 if __name__ == '__main__':
 
     list = []
-    # for i in range (1, 14):
-    #     path = "samples/sample-resumes_scs_%d.pdf" % i
-    #     list.append(helper(["pdf2txt.py", path]))
-    #
-    # for i in range(1, 3):
-    #     path = "samples/sample-resumes_finance_%d.pdf" % i
-    #     list.append(helper(["pdf2txt.py", path]))
 
     for filename in glob.glob('samples/*.pdf'):
         print filename
