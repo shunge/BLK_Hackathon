@@ -66,3 +66,24 @@ class sqliteTable:
 			if con:
 				con.close()
 
+
+	def queryID(self, IDList):
+		result = []
+		try:
+			con = lite.connect('resume.db')
+			with con:
+				cur = con.cursor()
+				IDTuple = tuple(IDList)
+				instruction = "SELECT * FROM Users WHERE ID IN %s" % (IDTuple, )
+				cur.execute(instruction)
+				rows = cur.fetchall()
+				for row in rows:
+					result.append(row)
+		except lite.Error, e:
+			print "Error %s:" % e.args[0]
+			sys.exit(1)
+		finally:
+			if con:
+				con.close()
+			return result
+
