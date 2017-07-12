@@ -98,7 +98,8 @@
 							<td></td>
 							<td></td>
                             <td>
-                                <embed src="{{person['pdf_path']}}" width="500" height="375" type='application/pdf'>
+
+                                <embed src={{str(person['pdf_path'])}} width="500" height="375" type='application/pdf'>
                             </td>
 						</tr>
                     {% endfor %}
