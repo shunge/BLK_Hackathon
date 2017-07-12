@@ -1,0 +1,73 @@
+CHRISTINE PHAN 
+612.685.3964 | c1phan@smith.edu 
+
+Box 0000, 1 Chapin Way, Northampton, MA 01063 
+
+EDUCATION 
+ 
+Smith College, Northampton, MA -- Bachelor of Arts expected May 2014 
+Major: Physics, Minor: Philosophy -- Cumulative GPA: 3.48 
+ 
+University of St. Andrews, St. Andrews, Scotland -- Junior Year Abroad program, 2012 – 2013  
+ 
+PUBLICATIONS AND PRESENTATIONS 
+ 
+Baumgartl, J. et al. including Christine Phan.  “Particle Clearing and Trapping using Optically-mediated Airy 
+Beams.” Optical Express. (To be published in 2014). 
+ 
+“Propagation of Orbital Angular Momentum States of Light in Turbulent Media.” 
+Symposium on Undergraduate Research DLS Meeting LS-XXIV, Rochester NY, October 2011 
+ 
+RESEARCH AND TEACHING EXPERIENCE 
+ 
+Teaching Assistant, Smith College Astronomy Department, Northampton, MA, January 2012 – present 
+
+Held evening lab hours weekly to assist in teaching laboratory material to students in introductory astronomy 
+courses. Assisted in solar and night-time telescope observations for Smith faculty, students, and guests.  
+
+ 
+Teaching Assistant, Smith College Physics Department, Northampton, MA, January 2011 – present 
+
+Tutored students in a 3rd-year course, Thermal Physics, on a weekly basis. Helped students prepare for exams 
+and homework assignments by going over concepts in thermal physics, statistical mechanics, and introductory 
+physics. Graded problem sets for General Physics I, General Physics II, and Modern Physics I.  
+ 
+
+Research Intern, University of St Andrews, St. Andrews, Scotland, August 2012 – February 2013 
+
+Developed optimized process for particle clearing and trapping using optically-mediated Airy beams.  Wrote 
+LabVIEW program with user interface that controlled experimental parameters. Conducted experiments using 
+program, and employed MATLAB for data analysis.  Results showed that Airy beams successfully manipulated 
+micro-particles.  Experimental procedure will be applied towards research involving optical sorting of animal 
+cells and other biological material.  
+
+ 
+Research Intern, University of Rochester REU Program, Rochester, NY, June 2012 – August 2013 
+
+Researched adaptive optics and orbital angular momentum (OAM) states of light for a summer REU project. 
+Set-up and performed several experiments to characterize the propagation of OAM states through turbulent 
+media. Wrote LabVIEW and MATLAB programs for data collection and analysis.  Data suggested that OAM 
+states are good candidates for quantum cryptography.  
+
+ 
+GRANTS 
+ 
+Awarded NSF research grant, 2012 
+ 
+TECHNICAL SKILLS 
+ 
+Mathematica, LabVIEW, LaTeX, MS Office, JavaScript, MATLAB, , Adobe Illustrator, Adobe Photoshop 
+ 
+CO-CURRICULAR EXPERIENCE  
+ 
+Member, Smith College Ultimate Frisbee, 2012 – present 
+
+ 
+
+ 
+
+ 
+
+Sample Science and Technical Resumes – Smith College Lazarus Center for Development 
+
+
