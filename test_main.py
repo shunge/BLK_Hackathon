@@ -1,6 +1,9 @@
 import pdf2txt
 import parse
 import sys
+import sqliteObject
+
+
 
 def main(argv):
     orig_stdout = sys.stdout
@@ -12,7 +15,6 @@ def main(argv):
 
     fileName = argv[1] + '.txt'
     parse.TxtParser.parseFile(fileName)
-
 
 
 

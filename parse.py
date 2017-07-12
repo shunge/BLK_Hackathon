@@ -1,5 +1,5 @@
 import re
-
+import sqliteObject
 
 class TxtParser:
 	@staticmethod
@@ -8,8 +8,11 @@ class TxtParser:
 		f = open(fileName, 'r')
 		text = f.read()
 
+		obj = sqliteObject.sqliteObj()
+
 		match = re.search('([A-Z][a-z]+|\.)(?:\s+([A-Z][a-z]+|\.))*(?:\s+[a-z][a-z\-]+){0,2}\s+([A-Z][a-z]+|\.)', text)
 		if match is not None:
+			obj.setName(match.group())
 			print('Name: ' + match.group())
 
 		match = re.search(
