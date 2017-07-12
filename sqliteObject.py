@@ -1,12 +1,13 @@
 class sqliteObj:
     IDCOUNTER = 1
 
-    def __init__(self):
+    def __init__(self, path):
         self.ID = sqliteObj.IDCOUNTER
         self.NAME = "NULL"
         self.Univ = "NULL"
         self.MAJOR = "NULL"
         self.GPA = "NULL"
+        self.filePath = path
         sqliteObj.IDCOUNTER += 1
 
     def setName(self, name):
@@ -35,3 +36,6 @@ class sqliteObj:
 
     def getGPA(self):
         return self.GPA
+
+    def getPATH(self):
+        return self.filePath
