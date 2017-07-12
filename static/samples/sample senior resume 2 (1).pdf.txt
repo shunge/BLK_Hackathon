@@ -1,0 +1,72 @@
+Leo N. Bize
+
+e:mail: leo.n.bize@rose-hulman.edu
+http://www.rose-hulman.edu/~bizeln
+
+School Address:
+5500 Wabash Ave, Box 19887
+Terre Haute, IN 47803
+(812)877-1511
+
+Permanent Address:
+2160 Greentree Road
+Pittsburgh, PA 15212
+(412)256-5688
+
+Objective:
+
+Full time position in the field of computer science with emphasis on both hardware and software
+
+Education:
+
+B. S. Computer Science, May 2005                             GPA 3.33/4.0
+Rose-Hulman Institute of Technology, Terre Haute, IN
+
+Summary:
+
+Computers
+
+C, Visual/Turbo C++, Maple, Matlab, Glut, OpenGL, Ada, BASIC, LISP, CadKey, AutoCAD,
+Pro/Engineer, and LogicWorks
+Wrote programs now in use at Inland Steel Bar Company for metallurgical calculations
+
+Robotics
+
+Custom circuit board fabrication, computer interfacing, 8052 single board computers
+Robotic gantry cranes, remote exploration vehicles, all home-built
+Voice and screen menu driven control, robot control program APIs
+2-D ultrasonic area mapping and robotic vehicle locaiton through wireless data links
+3-D computer simulation/virtual reality with a Nintendo Power Glove
+
+Experience:
+
+CYBO Robots, Indianapolis, IN
+Software Development Intern                                   Summer, 2004
+
+Researched, designed, and implemented a new robot move database which was "generic,
+expandable, and flexible"
+Used MAPLE for circular interpolation, representation, and translation prototyping
+Code currently being used in new controller to be shipped to Caterpillar October 1999
+
+Software Testing Intern                                             Summer, 2003
+
+Designed, executed, and documented a testing scheme for a robotic welding platform
+Wrote robotic control code, debugged electrical/electronic systems
+Test results are now begin used to upgrade and further develop current systems
+
+Field Robotics Center, Carnegie-Mellon University, Pittsburgh, PA
+REU Intern                                                                 Summer, 2002
+
+Assisted in the development of a prototype robot, Houdini
+Developed and tested the mechanical systems and hydraulic assemblies
+
+Honors:
+
+Kauffman Foundation Entrepreneurial Internship Program, Summers 2002 & 2003
+International Science & Engineering Fair: four years participation, 2nd place senior year in high
+school
+Kaystone Science/Engineering Fair: four years participation, 1st place physical division senior
+year
+First Place, American Society of Computing Machinery Programming Contest
+
+

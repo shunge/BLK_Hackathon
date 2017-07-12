@@ -75,9 +75,9 @@ def my_form_post():
                 old_result = results[result['id']]
                 old_result['score'] = old_result['score'] + result['score']
                 results[result['id']] = old_result
-        return render_template('results.html', responses=results.values())
+        return render_template('results.html', responses=results.values()).encode('utf-8')
     else:
-        return render_template('results.html', responses=d_results)
+        return render_template('results.html', responses=d_results).encode('utf-8')
 
 if __name__ == '__main__':
     app.run()
