@@ -93,13 +93,12 @@
 					<tbody>
                     {% for person in responses %}
 						<tr>
-							<td>{{person['id']}}</td>
-                            <td></td>
-							<td></td>
-							<td></td>
+							<td>{{person['name']}}</td>
+							<td>{{person['university']}}</td>
+							<td>{{person['major']}}</td>
+							<td>{{person['gpa']}}</td>
                             <td>
-
-                                <embed src={{str(person['pdf_path'])}} width="500" height="375" type='application/pdf'>
+                                <embed src={{person['pdf_path']}} width="500" height="375" type='application/pdf'>
                             </td>
 						</tr>
                     {% endfor %}

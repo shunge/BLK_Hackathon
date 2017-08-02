@@ -3,6 +3,7 @@ from flask import request
 from flask import render_template
 import solr
 import re
+from sqliteOperation import sqliteTable
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -44,7 +45,6 @@ def my_form_post():
     for result in r_results:
         results[result['id']] = result
 
-    print("hi")
     d = d_text.split(",")
     d_results = None
     if len(d) == 1 and d[0].strip():
@@ -75,9 +75,23 @@ def my_form_post():
                 old_result = results[result['id']]
                 old_result['score'] = old_result['score'] + result['score']
                 results[result['id']] = old_result
-        return render_template('results.html', responses=results.values()).encode('utf-8')
+
+        combined_result = []
+        db = sqliteTable()
+        for result in results.values():
+            combined = {}
+            id = int(result['id'])
+            relational_result = db.queryID([id])
+            for ele in relational_result:
+                combined['name'] = ele[1].encode('utf-8')
+                combined['university'] = ele[2].encode('utf-8')
+                combined['major'] = ele[3].encode('utf-8')
+                combined['gpa'] = ele[4].encode('utf-8')
+                combined['pdf_path'] = result['pdf_path'][0].encode('utf-8')
+                combined_result.append(combined)
+        return render_template('results.html', responses=combined_result)
     else:
-        return render_template('results.html', responses=d_results).encode('utf-8')
+        return render_template('results.html', responses=d_results)
 
 if __name__ == '__main__':
     app.run()

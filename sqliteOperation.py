@@ -74,7 +74,10 @@ class sqliteTable:
 			with con:
 				cur = con.cursor()
 				IDTuple = tuple(IDList)
-				instruction = "SELECT * FROM Users WHERE ID IN %s" % (IDTuple, )
+				if len(IDTuple) == 1:
+					instruction = "SELECT * FROM Users WHERE ID == %d" % IDTuple[0]
+				else:
+					instruction = "SELECT * FROM Users WHERE ID IN %s" % (IDTuple, )
 				cur.execute(instruction)
 				rows = cur.fetchall()
 				for row in rows:
